@@ -21,6 +21,7 @@ img {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: rgba(46, 47, 66, 0.16), rgba(46, 47, 66, 0.08),
     rgba(46, 47, 66, 0.08);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .container {
@@ -114,6 +115,10 @@ ul {
   padding-top: 24px;
 }
 
+.list-contact {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .list-address {
   font-style: normal;
   gap: 40px;
@@ -141,7 +146,7 @@ ul {
 .title-button {
   height: 100%;
   padding: 188px 0;
-  width: 100%;
+  max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7),
@@ -152,6 +157,7 @@ ul {
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   opacity: 0.7;
   margin: 0;
 }
@@ -187,6 +193,7 @@ ul {
   border-radius: 4px;
   height: 56px;
   margin-top: 48px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
   background-color: #404bbf;
@@ -230,6 +237,7 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .list {
@@ -260,7 +268,7 @@ ul {
   margin-top: 0;
 }
 
-.our-team ul {
+.our-team .job-list-main {
   display: flex;
   gap: 24px;
   padding-left: 156px;
@@ -285,10 +293,14 @@ ul {
 
 .job-list {
   background-color: #ffffff;
-  border-radius: 0px 4px 0px 4px;
-  width: calc((100% - 72px) / 4);
-  box-shadow: rgba(46, 47, 66, 0.08), rgba(46, 47, 66, 0.16),
-    rgba(46, 47, 66, 0.08);
+}
+
+.our-team-icon-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+  display: inline-flex;
+  gap: 24px;
 }
 
 .our-team-icon {
@@ -376,8 +388,7 @@ ul {
   height: 420;
   padding: 0 auto;
 }
-
-.image-container .title-first {
+.title-first {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;

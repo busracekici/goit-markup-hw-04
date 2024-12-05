@@ -221,7 +221,8 @@ ul {
   width: 64px;
   height: 64px;
   position: absolute;
-  z-index: 2;
+  z-index: 0;
+
   padding: 0;
 }
 
@@ -283,10 +284,6 @@ ul {
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
-}
-
-#instagram {
-  background-color: #404bbf;
 }
 
 .job-list {

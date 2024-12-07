@@ -291,17 +291,12 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
-.job-list-image {
-  padding: 32px 0;
-}
-
 .our-team-icon {
   width: 232px;
   height: 40px;
   margin-bottom: 32px;
   margin-left: 16px;
-  display: flex;
-  gap: 24px;
+
   padding: 32px 0;
 }
 
@@ -338,20 +333,20 @@ ul {
   background-color: #404bbf;
 }
 
-.our-team-icon .social-media-list .our-team-icon-list-first .icon-link svg {
+.icon {
+  padding: 0;
   width: 16px;
   height: 16px;
-}
-
-.icon {
   fill: #f4f4fd;
 }
 
-.job-list img {
+.job-list-images {
   width: 264px;
   height: 260px;
   display: flex;
   gap: 36px;
+
+  padding: 32px 0;
 }
 
 .personal {

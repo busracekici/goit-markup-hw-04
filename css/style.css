@@ -19,8 +19,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: rgba(46, 47, 66, 0.16), rgba(46, 47, 66, 0.08),
-    rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -147,7 +147,6 @@ ul {
   max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/back-img.png);
@@ -217,12 +216,11 @@ ul {
   gap: 24px;
 }
 
-.random-icon {
+.random-icon-top svg {
   width: 64px;
   height: 64px;
   position: absolute;
   z-index: 0;
-
   padding: 0;
 }
 
@@ -293,6 +291,10 @@ ul {
   border-radius: 0px 0px 4px 4px;
 }
 
+.job-list-image {
+  padding: 32px 0;
+}
+
 .our-team-icon {
   width: 232px;
   height: 40px;
@@ -337,8 +339,8 @@ ul {
 }
 
 .our-team-icon .social-media-list .our-team-icon-list-first .icon-link svg {
-  width: 40px;
-  height: 40px;
+  width: 16px;
+  height: 16px;
 }
 
 .icon {
@@ -399,8 +401,8 @@ ul {
 }
 
 .list-portfolio:hover {
-  box-shadow: rgba(46, 47, 66, 0.08), rgba(46, 47, 66, 0.16),
-    rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .list-portfolio .overlay {
@@ -461,6 +463,18 @@ ul {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
+}
+
+.secret-text {
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
 }
 
 .overlay {
@@ -526,8 +540,12 @@ ul {
   margin-left: 120px;
   display: block;
   flex-direction: row;
+  align-items: baseline;
 }
 
+.logo-text {
+  margin-right: 120px;
+}
 .social-media {
   height: 80px;
   margin: 0;
@@ -542,15 +560,42 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
 .finished .container {
   display: flex;
   flex-direction: row;
   gap: 120px;
 }
 
-.social-media div p {
-  color: #ffffff;
-  margin-bottom: 16px;
+.icon-link-footer {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-link-footer:hover {
+  background-color: #31d0aa;
+}
+
+.icon-link-footer svg {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-footer {
+  fill: #f4f4fd;
 }
 
 .footer-icons {

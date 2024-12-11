@@ -404,8 +404,8 @@ ul {
 }
 
 .list-portfolio:hover {
-  box-shadow: rgba(46, 47, 66, 0.08), rgba(46, 47, 66, 0.16),
-    rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .list-portfolio .overlay {
@@ -493,6 +493,18 @@ ul {
   width: 260px;
 }
 
+.secret-text {
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+}
+
 /*footer section*/
 
 .finished {
@@ -553,8 +565,16 @@ ul {
   display: flex;
   flex-direction: row;
   gap: 120px;
+  align-items: baseline;
 }
 
+.logo-text {
+  margin-right: 120px;
+}
+
+.finished > .container > .social-media-list {
+  gap: 16px;
+}
 .social-text {
   color: #ffffff;
   margin-bottom: 16px;
@@ -571,13 +591,12 @@ ul {
   justify-content: center;
 }
 
-.icon-link-footer:hover {
+.icon-link-footer:hover,
+.icon-link-footer:focus {
   background-color: #31d0aa;
 }
 
 .footer-icon {
-  display: flex;
-  gap: 16px;
   width: 24px;
   height: 24px;
 }

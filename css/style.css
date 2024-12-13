@@ -227,7 +227,7 @@ ul {
   width: 264px;
   height: 112px;
   background-color: #f4f4fd;
-  z-index: 1;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,17 +235,16 @@ ul {
   margin-bottom: 8px;
 }
 
+.random-icon {
+  width: 64px;
+  height: 64px;
+}
+
 .list {
   width: calc((100% - 72px) / 4);
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
-
-.list > svg {
-  width: 64px;
-  height: 64px;
-  z-index: 2;
 }
 
 .items {
@@ -554,8 +553,17 @@ ul {
   margin-right: 120px;
 }
 
-.finished > .container > .social-media-list {
+.social-media-list-footer {
   gap: 16px;
+  margin-top: 8px;
+  display: flex;
+
+  justify-content: center;
+  width: 232px;
+  height: 40px;
+  margin-bottom: 32px;
+  margin-right: 16px;
+  margin-left: 16px;
 }
 .social-text {
   color: #ffffff;

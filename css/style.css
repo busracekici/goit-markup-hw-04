@@ -222,18 +222,7 @@ ul {
   gap: 24px;
 }
 
-.random-icon {
-  position: absolute;
-  z-index: 2;
-  padding: 0;
-}
-
-.random-icon {
-  width: 64px;
-  height: 64px;
-}
-
-.random-icon {
+.random-icon-top {
   border: 1px solid #8e8f99;
   width: 264px;
   height: 112px;
@@ -251,6 +240,12 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.list > svg {
+  width: 64px;
+  height: 64px;
+  z-index: 2;
 }
 
 .items {
